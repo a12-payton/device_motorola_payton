@@ -118,6 +118,11 @@ debug.performance.tuning=1
 # Factory reset partition
 ro.frp.pst=/dev/block/platform/soc/c0c4000.sdhci/by-name/frp
 
+# Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.camera.eis.enable=1 \
+    persist.vendor.camera.ois.disable=1
+
 # Fluence
 persist.vendor.audio.dualmic.config=endfire
 persist.vendor.audio.fluence.audiorec=false
