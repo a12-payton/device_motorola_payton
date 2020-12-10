@@ -97,6 +97,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MotoPocketMode
 
+# Powerhint
+EAS_POWERHINT_VARIANT := sdm630
+
 # Recovery
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.payton.rc:root/init.recovery.payton.rc
