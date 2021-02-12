@@ -1,4 +1,4 @@
-{
+  {
   "Nodes": [
     {
       "Name": "CPULittleClusterMaxFreq",
@@ -15,8 +15,9 @@
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
       "Values": [
         "1728000",
-        "883200",
-        "0"
+        "1094400",
+        "614400",
+		"0"
       ],
       "ResetOnInit": true
     },
@@ -34,8 +35,9 @@
       "Name": "CPUBigClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
-        "2016000",
-        "0"
+        "9999999",
+        "1113600",
+		"0"
       ],
       "ResetOnInit": true
     },
