@@ -81,6 +81,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.sdm660
 
+# MotoActions
+PRODUCT_PACKAGES += \
+    MotoActions
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
