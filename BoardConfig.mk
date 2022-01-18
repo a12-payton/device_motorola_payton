@@ -52,5 +52,9 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 603979776
 # Power
 TARGET_HAS_NO_WLAN_STATS := true
 
+#RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+TARGET_USES_OLD_MNC_FORMAT := true
+
 # inherit from the proprietary version
 include vendor/motorola/payton/BoardConfigVendor.mk
