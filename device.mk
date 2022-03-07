@@ -119,6 +119,10 @@ PRODUCT_PACKAGES += \
     libxml2 \
     vendor.qti.hardware.camera.device@1.0:64
 
+# Call recording for Google Dialer
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
+
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
