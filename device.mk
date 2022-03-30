@@ -160,7 +160,7 @@ $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
 PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
-    qcom.fmradio
+#    qcom.fmradio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
