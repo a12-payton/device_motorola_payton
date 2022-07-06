@@ -31,3 +31,11 @@ on post-fs
 
 on post-fs-data
     mkdir /data/.fps 0770 system system
+
+on boot
+# Start qcrild
+    start vendor.qcrild
+
+# Start secondary qcrild instance if dual sim property set
+on property:persist.radio.multisim.config=dsds
+    start vendor.qcrild2
