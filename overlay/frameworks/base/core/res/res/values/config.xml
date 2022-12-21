@@ -454,6 +454,9 @@
          activated. -->
     <integer name="config_nightDisplayColorTemperatureDefault">3850</integer> 
 
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>
+
     <!-- Device configuration indicating whether we should avoid using accelerated graphics
          in certain places to reduce RAM footprint. Allows to tune down 
          device's memory use without going to the point of causing applications to turn
@@ -464,14 +467,49 @@
     <bool name="config_enableSmartPixels">true</bool>
 
     <!-- SystemInfo Sys Nodes -->
-    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone4/temp</string>
     <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
     <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
     <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
-    <integer name="config_sysCPUTempMultiplier">1000</integer>
     <integer name="config_sysBatteryTempMultiplier">10</integer>
 
     <!-- Smart charge sysfs node and value for suspend/resume charging-->
     <bool name="config_smartChargingAvailable">true</bool>
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/battery_charging_enabled</string>
+    <string name="config_smartChargingSuspendValue" translatable="false">0</string>
+    <string name="config_smartChargingResumeValue" translatable="false">1</string>
+
+    <!-- Any package that has one of the package names defined below will be prevented
+       from using specific sensors in order to stop battery drain -->
+    <string-array name="config_blockPackagesSensorDrain">
+        <item>com.whatsapp</item>
+        <item>com.gbwhatsapp</item>
+        <item>com.yowhatsapp</item>
+        <item>com.whatsapp.plus</item>
+        <item>com.netease.cloudmusic</item>
+        <item>fm.xiami.main</item>
+        <item>com.netease.snailread</item>
+        <item>com.baidu.browser.apps</item>
+        <item>org.thunderdog.challegram</item>
+        <item>com.snapchat.android</item>
+        <item>com.facebook.orca</item>
+        <item>com.Slack</item>
+        <item>tugapower.codeaurora.browser</item>
+        <item>org.mozilla.firefox</item>
+        <item>com.android.chrome</item>
+        <item>com.amazon.mShop.android.shopping</item>
+        <item>com.google.android.inputmethod.latin</item>
+        <item>com.google.android.apps.plus</item>
+        <item>com.google.android.apps.maps</item>
+        <item>ru.ok.android</item>
+        <item>com.instagram.android.MainTabActivity</item>
+        <item>com.facebook.orca</item>
+        <item>com.facebook.orca.StartScreenActivity</item>
+        <item>com.spotify.music</item>
+        <item>com.spotify.music.MainActivity</item>
+        <item>com.android.vending</item>
+        <item>com.trtf.blue</item>
+        <item>com.truecaller</item>
+        <item>com.gaana</item>
+        <item>com.facebook.katana.LoginActivity</item>
+    </string-array>
 </resources>
