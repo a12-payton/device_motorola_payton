@@ -73,4 +73,7 @@ PRODUCT_MODEL := Moto X4
 PRODUCT_MANUFACTURER := Motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+        PRIVATE_BUILD_DESC="redfin-user-13-TQ1A.221205.011-9244662-release-keys" \
         PRODUCT_NAME=payton
+
+BUILD_FINGERPRINT := google/redfin/redfin:13/TQ1A.221205.011/9244662:user/release-keys
