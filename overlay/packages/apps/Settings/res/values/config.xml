@@ -27,4 +27,9 @@
     <dimen name="fingerprint_dot_radius">5dp</dimen>
     <item name="fingerprint_sensor_location_fraction_y" type="fraction">95%</item>
 
+  <!-- Battery Health -->
+  <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full</string>
+  <string name="config_batCurCap">/sys/class/power_supply/bms/charge_now_raw</string>
+  <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
+
 </resources>
