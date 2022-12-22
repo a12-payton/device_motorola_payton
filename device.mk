@@ -97,6 +97,9 @@ PRODUCT_PACKAGES += \
     libbt-vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 1920
