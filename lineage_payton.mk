@@ -30,6 +30,10 @@ $(call inherit-product, device/motorola/payton/device.mk)
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Gapps
+$(call inherit-product, vendor/gms/gms_mini.mk)
+WITH_GMS := true
+
 # Do not ship live wallpapers
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
