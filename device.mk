@@ -153,6 +153,12 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor
+
+# Fingerprint Gestures
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
+    $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc
+
 # Dex-pre-opt exclusions
 $(call add-product-dex-preopt-module-config,MotoSignatureApp,disable)
 
@@ -370,7 +376,7 @@ PRODUCT_PACKAGES += \
 # PocketMode
 PRODUCT_PACKAGES += \
     MotoPocketMode
-    
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.payton-libperfmgr \
@@ -511,7 +517,7 @@ PRODUCT_PACKAGES += \
     wificond \
     WifiOverlay \
     wpa_supplicant \
-    wpa_supplicant.conf 
+    wpa_supplicant.conf
 
 # VNDK
 PRODUCT_COPY_FILES += \
