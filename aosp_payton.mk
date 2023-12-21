@@ -19,13 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Official SuperiorOS
-SUPERIOR_OFFICIAL := true
-DEVICE_MAINTAINERS="Dhinesh"
+TARGET_GAPPS_ARCH := arm64
 
 # Device
 $(call inherit-product, device/motorola/payton/device.mk)
@@ -69,7 +66,7 @@ endif
 
 # Device identifiers
 PRODUCT_DEVICE := payton
-PRODUCT_NAME := superior_payton
+PRODUCT_NAME := aosp_payton
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto X4
 PRODUCT_MANUFACTURER := Motorola
